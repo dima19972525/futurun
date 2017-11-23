@@ -12,9 +12,10 @@ public class ScrollBackground : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector2 offset = new Vector2(Time.time * Speed, 0);
-
-        
-        GetComponent<Renderer>().material.mainTextureOffset = offset;
+        if (GameState.State == GameState.States.PLAY)
+        {
+            Vector2 offset = new Vector2(Time.time * Speed, 0);
+            GetComponent<Renderer>().material.mainTextureOffset = offset;
+        }
 	}
 }

@@ -51,6 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scenes\Game\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scenes\Game\Scripts\EndPlace.cs" />
+     <Compile Include="Assets\Scenes\Game\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scenes\Game\Scripts\GameHelper.cs" />
+     <Compile Include="Assets\Scenes\Game\Scripts\GameState.cs" />
      <Compile Include="Assets\Scenes\Game\Scripts\Hero.cs" />
      <Compile Include="Assets\Scenes\Game\Scripts\ManagerGameScene.cs" />
      <Compile Include="Assets\Scenes\Game\Scripts\ScrollBackground.cs" />
