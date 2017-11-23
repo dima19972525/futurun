@@ -5,9 +5,9 @@ using UnityEngine;
 public class ManagerGameScene : MonoBehaviour {
 
     public Transform BackGround;
-    public BoxCollider2D Ground, Sky;
+    public BoxCollider2D Ground, Sky, LeftWall, RightWall;
 
-    private const float wallHeight = 1.0f;
+    private const float wallSize = 1.0f;
 
     void Awake() {
         // Подгоняем размеры фона, под размеры камеры
@@ -15,8 +15,10 @@ public class ManagerGameScene : MonoBehaviour {
         float h = v * Screen.width / Screen.height;
         BackGround.localScale = new Vector3(h, v, 1);
 
-        Ground.size = new Vector2(h, wallHeight);
+        Ground.size = new Vector2(h, wallSize);
         Sky.size = Ground.size;
+        LeftWall.size = new Vector2(wallSize, v);
+        RightWall.size = LeftWall.size;
     }
 
 	// Use this for initialization
