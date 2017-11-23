@@ -17,6 +17,7 @@ public class ManagerGameScene : MonoBehaviour {
         float v = Camera.main.orthographicSize * 2.0f;
         float h = v * Screen.width / Screen.height;
         BackGround.localScale = new Vector3(h, v, 1);
+		BackGround.transform.position = Camera.main.rect.position;
         
         // Настройка размеров коллайдеров 
         Ground.size = new Vector2(h, wallSize);

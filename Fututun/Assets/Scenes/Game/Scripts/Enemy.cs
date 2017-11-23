@@ -10,9 +10,11 @@ public class Enemy : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        transform.position = new Vector2(transform.position.x - Speed * Time.deltaTime,
-            transform.position.y);
-        transform.Rotate(Vector3.forward * SpeedRotation * Time.deltaTime);
+		if (GameState.State == GameState.States.PLAY) {
+			transform.position = new Vector2 (transform.position.x - Speed * Time.deltaTime,
+				transform.position.y);
+			transform.Rotate (Vector3.forward * SpeedRotation * Time.deltaTime);
+		}
 	}
 
     void OnTriggerEnter2D(Collider2D other)

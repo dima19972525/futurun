@@ -59,8 +59,11 @@
      <Compile Include="Assets\Scenes\Game\Scripts\Hero.cs" />
      <Compile Include="Assets\Scenes\Game\Scripts\ManagerGameScene.cs" />
      <Compile Include="Assets\Scenes\Game\Scripts\ScrollBackground.cs" />
-     <Compile Include="Assets\Scenes\Main\Scripts\ManagerMainScene.cs" />
+     <Compile Include="Assets\Scenes\Game\Scripts\UIControl.cs" />
+     <Compile Include="Assets\Scenes\Main\Scripts\AudioPlayer.cs" />
+     <Compile Include="Assets\Scenes\Main\Scripts\CanvasAudio.cs" />
      <Compile Include="Assets\Scenes\Main\Scripts\UIButtonsEvents.cs" />
+     <Compile Include="Assets\Scenes\Main\Scripts\UICanvasControl.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
